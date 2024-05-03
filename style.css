@@ -1,0 +1,130 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display:grid;
+    grid-template-areas: 
+    "to-menu header header"
+    "to-menu content content"
+    "to-menu footer footer";
+    grid-template-columns: 16vw ;
+    grid-template-rows: 20vh auto 10vh;
+    background-color:lightgray;
+    overflow:auto ;
+}
+.menu{
+    grid-area: to-menu;
+    border-right:3px solid rgba(7, 7, 7, 0.49);
+
+
+}
+.to-header{
+    grid-area: header;
+    
+}
+.to-content{
+    grid-area: content;
+    
+}
+.to-footer{
+    grid-area: footer;
+    text-align: center;
+    padding-top: 1rem;
+    border:3px solid rgba(7, 7, 7, 0.49);
+    border-left: 0;
+    border-bottom: 0;
+}
+.to-footer a{
+    color:rgba(0, 0, 0, 0.788);
+    text-decoration:underline;
+    
+}
+
+.to-header img{
+    width: 100%;
+    height: 100%;
+}
+
+.to-content h2{
+    margin-top: .5rem;
+}
+
+/* Página inicial */
+
+.to-content h2{
+    margin-left: .5rem;
+    color:rgba(7, 7, 7, 0.49);
+}
+.to-content p{
+    margin: .5rem 1rem auto .5rem;
+    color:rgba(7, 7, 7, 0.699);
+    text-align: justify;
+}
+
+/* Menu */
+
+.menu ul li{
+    margin: 1rem 0;
+    text-align: center;
+    border: 3px solid rgba(7, 7, 7, 0.49);
+    padding: 0.5rem;
+    
+    
+}
+.menu ul{
+    margin: 1rem .5rem;
+}
+.menu ul li a{
+    display: inline-block;
+    max-width: 100%;
+    color:rgba(0, 0, 0, 0.788);
+    overflow:hidden;
+}
+
+
+/* Tabela */
+
+.to-content table tbody tr td{
+    text-align: center;
+    padding: .5rem;
+}
+
+.to-content table{
+    margin: 2rem auto
+}
+
+/* contato */
+.contato-basico{
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.788);
+
+}
+
+.to-content h4{
+    color:rgba(0, 0, 0, 0.738) ;
+    margin-left: .2rem;
+    margin-top: .5rem;
+}
+
+.to-contato{
+    display: flex;
+}
+
+.to-content iframe{
+   margin-top: 1rem;
+}
+
+.formulario{
+    margin: .5rem 4rem;
+}
+
+.preencher{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
